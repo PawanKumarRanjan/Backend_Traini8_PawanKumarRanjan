@@ -15,10 +15,12 @@ Before you begin, ensure you have met the following requirements:
 
 To get started with this project, follow these steps:
 
-Clone the repository to your local machine or download it as ZIP
+1. Clone the repository to your local machine or download it as ZIP
 
      ```sh
      git clone https://github.com/PawanKumarRanjan/Backend_Traini8_PawanKumarRanjan.git
+
+2. Create a database schema
 
 ## Usage
 
@@ -27,23 +29,25 @@ Use the Postman to fire the request in order to hit the endpoints of application
 1. Creating a New Training Center
 
    To create a new training center, send a POST request to the following endpoint:
-   http://localhost:8080/api/training-centers/create-center
+   http://localhost:8080/api/training-centers/create-center (make sure to check your server port)
 
-   In the body of request enter the JSON data:
-   {
-      "centerName": "ABC Training Center",
-      "centerCode": "ABC123DEF456",
-      "address": {
-        "detailedAddress": "A Block",
-        "city": "New Delhi",
-        "state": "Delhi",
-        "pincode": "123456"
-      },
-      "studentCapacity": 200,
-      "coursesOffered": ["Course A", "Course B", "Course C"],
-      "contactEmail": "abc@gmail.com",
-      "contactPhone": "1234567890"
-   }
+  In the body of the request, enter the JSON data:
+
+     ```json
+     {
+       "centerName": "ABC Training Center",
+       "centerCode": "ABC123DEF456",
+       "address": {
+         "detailedAddress": "A Block",
+         "city": "New Delhi",
+         "state": "Delhi",
+         "pincode": "123456"
+       },
+       "studentCapacity": 200,
+       "coursesOffered": ["Course A", "Course B", "Course C"],
+       "contactEmail": "abc@gmail.com",
+       "contactPhone": "1234567890"
+     }
 
 2. Getting All Training Centers
 
